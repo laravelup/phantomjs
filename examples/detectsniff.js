@@ -46,7 +46,7 @@ if (system.args.length === 1) {
         } else {
             window.setTimeout(function () {
                 sniffed = page.evaluate(function () {
-                    return navigator.sniffed;
+                    return navigator.sniffed; //
                 });
                 if (sniffed) {
                     console.log('The page tried to sniff the user agent.');
